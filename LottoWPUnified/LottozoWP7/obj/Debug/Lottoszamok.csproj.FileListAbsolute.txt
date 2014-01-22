@@ -1,0 +1,128 @@
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\ApplicationIcon.png
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\Background.png
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\Icons\appbar.cancel.rest.png
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\Icons\appbar.check.rest.png
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\Icons\CloverAppIcon.png
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\Icons\CloverTileIcon.png
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\Lottoszamok.dll
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\Lottoszamok.pdb
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\AppManifest.xaml
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\Lottoszamok.xap
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\Caliburn.Micro.dll
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\Caliburn.Micro.Extensions.dll
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\Microsoft.Phone.Controls.dll
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\System.Windows.Interactivity.dll
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\Caliburn.Micro.pdb
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\Caliburn.Micro.xml
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\Caliburn.Micro.Extensions.pdb
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\Caliburn.Micro.Extensions.xml
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\Microsoft.Phone.Controls.xml
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\System.Windows.Interactivity.xml
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\Sajat projektek\LottoWP7\Lottoszamok\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\App.g.i.cs
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\Views\AboutView.g.i.cs
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\Views\JokerView.g.i.cs
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\Views\LotteryTicketSetUpView.g.i.cs
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\Views\LottoSixView.g.i.cs
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\Views\LottoTicketView.g.i.cs
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\Views\LottoView.g.i.cs
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\Views\MainView.g.i.cs
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\Views\SkandinavianLottoView.g.i.cs
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\Views\UserControls\SelectedJoker.g.i.cs
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\Views\UserControls\JokerNumberSelectorControl.g.i.cs
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\Views\UserControls\LotteryTicket.g.i.cs
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\Views\UserControls\NumberDisplay.g.i.cs
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\Views\UserControls\SelectedNumbers.g.i.cs
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\Lottoszamok.g.resources
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\Lottoszamok.dll
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\Lottoszamok.pdb
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\XapCacheFile.xml
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\Views\JokerSelectorView.g.i.cs
+D:\Sajat projektek\LottoWP7\Lottoszamok\obj\Debug\Views\UserControls\NumberValidator.g.i.cs
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\ApplicationIcon.png
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Background.png
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Icons\appbar.cancel.rest.png
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Icons\appbar.check.rest.png
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Icons\CloverAppIcon.png
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Icons\CloverTileIcon.png
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Lottoszamok.dll
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Lottoszamok.pdb
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\AppManifest.xaml
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Lottoszamok.xap
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Caliburn.Micro.dll
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Caliburn.Micro.Extensions.dll
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Microsoft.Phone.Controls.dll
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\System.Windows.Interactivity.dll
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Caliburn.Micro.pdb
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Caliburn.Micro.xml
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Caliburn.Micro.Extensions.pdb
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Caliburn.Micro.Extensions.xml
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Microsoft.Phone.Controls.xml
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\System.Windows.Interactivity.xml
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\de\System.Windows.Interactivity.resources.dll
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\en\System.Windows.Interactivity.resources.dll
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\es\System.Windows.Interactivity.resources.dll
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\fr\System.Windows.Interactivity.resources.dll
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\it\System.Windows.Interactivity.resources.dll
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\ja\System.Windows.Interactivity.resources.dll
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\ko\System.Windows.Interactivity.resources.dll
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+c:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+c:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Lottoszamok.g.resources
+c:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Lottoszamok.dll
+c:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Lottoszamok.pdb
+c:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\XapCacheFile.xml
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Icons\appbar.delete.rest.png
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Icons\appbar.add.rest.png
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Microsoft.Advertising.Mobile.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\Microsoft.Advertising.Mobile.UI.xml
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\cs-CZ\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\da-DK\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\de-DE\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\el-GR\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\en-GB\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\es-ES\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\fi-FI\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\fr-FR\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\hu-HU\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\it-IT\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\ja-JP\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\ko-KR\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\nb-NO\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\nl-NL\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\pl-PL\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\pt-BR\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\pt-PT\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\ru-RU\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\sv-SE\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\zh-CN\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\zh-TW\Microsoft.Advertising.Mobile.resources.dll
+C:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Lottoszamok.csprojResolveAssemblyReference.cache
+C:\Storage\work\LottoWP7\Lottoszamok\Bin\Debug\SplashScreenImage.jpg
+C:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\App.g.cs
+C:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Views\AboutView.g.cs
+C:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Views\JokerSelectorView.g.cs
+C:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Views\JokerView.g.cs
+C:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Views\LotteryTicketSetUpView.g.cs
+C:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Views\LottoSixView.g.cs
+C:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Views\LottoTicketView.g.cs
+C:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Views\LottoView.g.cs
+C:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Views\MainView.g.cs
+C:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Views\PurchaseView.g.cs
+C:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Views\SkandinavianLottoView.g.cs
+C:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Views\UserControls\NumberValidator.g.cs
+C:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Views\UserControls\SelectedJoker.g.cs
+C:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Views\UserControls\JokerNumberSelectorControl.g.cs
+C:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Views\UserControls\LotteryTicket.g.cs
+C:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Views\UserControls\NumberDisplay.g.cs
+C:\Storage\work\LottoWP7\Lottoszamok\obj\Debug\Views\UserControls\SelectedNumbers.g.cs

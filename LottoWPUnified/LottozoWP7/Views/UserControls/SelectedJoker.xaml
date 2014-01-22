@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="Lottoszamok.Views.UserControls.SelectedJoker"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	FontFamily="{StaticResource PhoneFontFamilyNormal}"
+	FontSize="{StaticResource PhoneFontSizeNormal}"
+	Foreground="{StaticResource PhoneForegroundBrush}"
+	d:DesignHeight="150" d:DesignWidth="440">
+
+	<Grid x:Name="LayoutRoot" Margin="12">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+		<Button x:Name="rndButton"
+				Grid.Row="2" 
+				Margin="12,12,12,0"
+				Content="Gépi" 
+				Height="70" 
+				Width="180"
+				HorizontalAlignment="Left"
+				Click="rndButton_Click" />
+		<Button x:Name="selectButton"
+				Grid.Row="2" 
+				Margin="12,12,12,0"
+				Content="Választ" 
+				Height="70" 
+				Width="180"
+				HorizontalAlignment="Right"
+				Click="selectButton_Click" />
+	</Grid>
+</UserControl>

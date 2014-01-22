@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Lottoszamok.Views.UserControls.NumberDisplay"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+
+    <Canvas x:Name="LayoutRoot" Height="60" Width="60">
+        <Ellipse Height="60" Width="60">
+            <Ellipse.Fill>
+                <LinearGradientBrush StartPoint="0.25,0" EndPoint="0.75,1">
+                    <GradientStop Color="Red" Offset="0" />
+                    <GradientStop Color="Silver" Offset="1.5" />
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <TextBlock x:Name="OneDigitPlaceholder" Visibility="Collapsed" Margin="24,12" FontSize="24" FontWeight="Medium" />
+        <TextBlock x:Name="TwoDigitPlaceholder" Visibility="Collapsed" Margin="17,12" FontSize="24" FontWeight="Medium" />
+    </Canvas>
+
+</UserControl>

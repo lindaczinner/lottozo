@@ -1,0 +1,208 @@
+﻿<phone:PhoneApplicationPage xmlns:UI="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI"  x:Class="Lottoszamok.Views.MainView"
+							xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+							xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+							xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+							xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+							xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+							xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+							xmlns:adduplex="clr-namespace:AdDuplex;assembly=AdDuplex.WindowsPhone"
+							xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+							FontFamily="{StaticResource PhoneFontFamilyNormal}"
+							FontSize="{StaticResource PhoneFontSizeNormal}"
+							Foreground="{StaticResource PhoneForegroundBrush}"
+							SupportedOrientations="Portrait"
+							Orientation="Portrait"
+							mc:Ignorable="d"
+							d:DesignWidth="480"
+							d:DesignHeight="696"
+							shell:SystemTray.IsVisible="True"
+							Style="{StaticResource NavigationTurnstyleAnimation}"
+							toolkit:TiltEffect.IsTiltEnabled="True"
+							>
+
+	<phone:PhoneApplicationPage.Resources>
+		<Style x:Key="IconButton" TargetType="Button">
+			<Setter Property="VerticalAlignment" Value="Center" />
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<Image Source="/Lottoszamok;component/Icons/appbar.next.rest.png"/>
+							<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+											  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+											  Content=""/>
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+		<Style x:Key="IconBorder" TargetType="Border">
+			<Setter Property="BorderBrush" Value="{StaticResource PhoneForegroundBrush}" />
+			<Setter Property="Background" Value="Black"/>
+			<Setter Property="BorderThickness" Value="2" />
+			<Setter Property="Height" Value="50" />
+			<Setter Property="Width" Value="50" />
+			<Setter Property="Margin" Value="5" />
+		</Style>
+	</phone:PhoneApplicationPage.Resources>
+
+	<!--LayoutRoot contains the root grid where all other page content is placed-->
+	<Grid x:Name="LayoutRoot">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+
+		<!--Ad-->
+		<adduplex:AdControl x:Name="adDuplexAd" 
+							AppId="50455"
+							Visibility="{Binding IsTrial, Converter={StaticResource BoolToVisibilityConverter}}"
+							Height="80" 
+							Width="480"/>
+
+		<UI:AdControl ApplicationId="821c65cc-89e8-4291-98f1-0009c4a4a658" 
+					  AdUnitId="110987" 
+					  IsAutoRefreshEnabled="True"
+					  IsAutoCollapseEnabled="True"
+					  Visibility="{Binding IsTrial, Converter={StaticResource BoolToVisibilityConverter}}"
+					  Height="80" 
+					  Width="480" />
+
+		<!--TitlePanel contains the name of the application and page title-->
+		<StackPanel x:Name="TitlePanel"
+					Grid.Row="1"
+					Margin="12,24">
+			<TextBlock x:Name="ApplicationTitle"
+					   Text="{Binding ApplicationTitle}"
+					   Style="{StaticResource PhoneTextNormalStyle}" />
+			<TextBlock x:Name="PageTitle"
+					   Text="{Binding PageName}"
+   Style="{StaticResource PhoneTextTitle1Style}"
+					   Foreground="{StaticResource PhoneAccentBrush}"
+					   Margin="6,0"/>
+		</StackPanel>
+
+		<!--ContentPanel - place additional content here-->
+		<ScrollViewer Grid.Row="2">
+			<Grid x:Name="ContentGrid">
+<StackPanel Margin="24">
+					<Border Style="{StaticResource MainItemBorderStyle}">
+				<Grid Style="{StaticResource MainItemGridStyle}">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="70" />
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition />
+						<RowDefinition />
+					</Grid.RowDefinitions>
+					<TextBlock x:Name="LottoTitle" Text="{Binding LottoTitle}" FontSize="{StaticResource PhoneFontSizeLarge}" Style="{StaticResource BasicTextColor}" />
+							<TextBlock Grid.Row="1" x:Name="LottoNumbers" Text="{Binding LottoNumbers}" FontSize="{StaticResource PhoneFontSizeMediumLarge}" />
+					<ProgressBar Grid.Row="1" 
+									 IsIndeterminate="{Binding IsNoLottoResult}" 
+									 Visibility="{Binding IsNoLottoResult, Converter={StaticResource BoolToVisibilityConverter}}" 
+									 Style="{StaticResource ProgressBarStyle}" />
+					<Border Grid.Column="1" 
+								Grid.RowSpan="2" 
+								Style="{StaticResource IconBorder}"
+								Visibility="{Binding IsLottoDetailButtonVisible, Converter={StaticResource BoolToVisibilityConverter}}">
+						<Button x:Name="GoToLottoPage" Style="{StaticResource IconButton}" />
+					</Border>
+				</Grid>
+</Border>
+					<Border Style="{StaticResource MainItemBorderStyle}">
+						<Grid Style="{StaticResource MainItemGridStyle}">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="70" />
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition />
+						<RowDefinition />
+					</Grid.RowDefinitions>
+					<TextBlock x:Name="LottoSixTitle" Text="{Binding LottoSixTitle}" FontSize="{StaticResource PhoneFontSizeLarge}" Style="{StaticResource BasicTextColor}" />
+							<TextBlock Grid.Row="1" x:Name="LottoSixNumbers" Text="{Binding LottoSixNumbers}" FontSize="{StaticResource PhoneFontSizeMediumLarge}" />
+					<ProgressBar Grid.Row="1" 
+									 IsIndeterminate="{Binding IsNoLottoSixResult}" 
+									 Visibility="{Binding IsNoLottoSixResult, Converter={StaticResource BoolToVisibilityConverter}}" 
+									 Style="{StaticResource ProgressBarStyle}" />
+					<Border Grid.Column="1" 
+								Grid.RowSpan="2" 
+								Style="{StaticResource IconBorder}"
+								Visibility="{Binding IsLottoSixDetailButtonVisible, Converter={StaticResource BoolToVisibilityConverter}}">
+						<Button x:Name="GoToLottoSixPage" Style="{StaticResource IconButton}" />
+					</Border>
+				</Grid>
+</Border>
+					<Border Style="{StaticResource MainItemBorderStyle}">
+						<Grid Style="{StaticResource MainItemGridStyle}">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="70" />
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition />
+						<RowDefinition />
+						<RowDefinition />
+					</Grid.RowDefinitions>
+					<TextBlock x:Name="SkandinavianLottoTitle" Text="{Binding SkandinavianLottoTitle}" FontSize="{StaticResource PhoneFontSizeLarge}" Style="{StaticResource BasicTextColor}" />
+						<TextBlock Grid.Row="1" x:Name="SkandinavianLottoNumbers" Text="{Binding SkandinavianLottoNumbers}" FontSize="{StaticResource PhoneFontSizeMediumLarge}" />
+			
+					<ProgressBar Grid.Row="1" 
+									 IsIndeterminate="{Binding IsNoSkandinavianLottoResult}" 
+									 Visibility="{Binding IsNoSkandinavianLottoResult, Converter={StaticResource BoolToVisibilityConverter}}" 
+									 Style="{StaticResource ProgressBarStyle}" />
+					<ProgressBar Grid.Row="2" 
+									 IsIndeterminate="{Binding IsNoSkandinavianLottoResult}" 
+									 Visibility="{Binding IsNoSkandinavianLottoResult, Converter={StaticResource BoolToVisibilityConverter}}" 
+									 Style="{StaticResource ProgressBarStyle}" />
+					<Border Grid.Column="1" 
+								Grid.RowSpan="3" 
+								Style="{StaticResource IconBorder}"
+								Visibility="{Binding IsSkandinavianLottoDetailButtonVisible, Converter={StaticResource BoolToVisibilityConverter}}">
+						<Button x:Name="GoToSkandinavianLottoPage" Style="{StaticResource IconButton}" />
+					</Border>
+				</Grid>
+</Border>
+					<Border Style="{StaticResource MainItemBorderStyle}">
+						<Grid Style="{StaticResource MainItemGridStyle}">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="70" />
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition />
+						<RowDefinition />
+					</Grid.RowDefinitions>
+					<TextBlock x:Name="JokerTitle" Text="{Binding JokerTitle}" FontSize="{StaticResource PhoneFontSizeLarge}" Style="{StaticResource BasicTextColor}" />
+							<TextBlock Grid.Row="1" x:Name="JokerNumbers" Text="{Binding JokerNumbers}" FontSize="{StaticResource PhoneFontSizeMediumLarge}" />
+					<ProgressBar Grid.Row="1" 
+									 IsIndeterminate="{Binding IsNoJokerResult}" 
+									 Visibility="{Binding IsNoJokerResult, Converter={StaticResource BoolToVisibilityConverter}}" 
+									 Style="{StaticResource ProgressBarStyle}" />
+					<Border Grid.Column="1" 
+								Grid.RowSpan="2" 
+								Style="{StaticResource IconBorder}"
+								Visibility="{Binding IsJokerDetailButtonVisible, Converter={StaticResource BoolToVisibilityConverter}}">
+						<Button x:Name="GoToJokerPage" Style="{StaticResource IconButton}" />
+					</Border>
+				</Grid>
+</Border>
+				</StackPanel>
+			</Grid>
+		</ScrollViewer>
+	</Grid>
+
+	<phone:PhoneApplicationPage.ApplicationBar>
+		<shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+			<shell:ApplicationBarIconButton IconUri="/Icons/refresh.png" Text="frissítés" Click="ApplicationBarRefreshIconButton_Click"/>
+			<shell:ApplicationBarIconButton IconUri="/Icons/appbar.add.rest.png" Text="új szelvény" Click="ApplicationBarAddIconButton_Click"/>
+			<shell:ApplicationBar.MenuItems>
+				<shell:ApplicationBarMenuItem Text="Névjegy" Click="ApplicationBarMenuItem_Click"/>
+			</shell:ApplicationBar.MenuItems>
+		</shell:ApplicationBar>
+	</phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

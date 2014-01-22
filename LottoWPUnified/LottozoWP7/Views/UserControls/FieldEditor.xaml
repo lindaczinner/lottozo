@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="Lottoszamok.Views.UserControls.FieldEditor"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	FontFamily="{StaticResource PhoneFontFamilyNormal}"
+	FontSize="{StaticResource PhoneFontSizeNormal}"
+	Foreground="{StaticResource PhoneForegroundBrush}"
+	d:DesignHeight="150" d:DesignWidth="440"
+	Loaded="FieldsEditor_OnLoaded">
+
+	<Grid x:Name="LayoutRoot" Margin="12" Background="{StaticResource PhoneChromeBrush}">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+		<TextBlock x:Name="FieldTitle" Margin="12" Style="{StaticResource BasicTextColor}" />
+		<Button x:Name="deleteButton"
+				Grid.Row="2" 
+				Margin="12,12,12,0"
+				Content="Törlés" 
+				Height="70" 
+				Width="180"
+				HorizontalAlignment="Left"
+				Visibility="Collapsed"
+				Click="DeleteButton_OnClick"/>
+		<Button x:Name="selectButton"
+				Grid.Row="2" 
+				Margin="12,12,12,0"
+				Content="Választ" 
+				Height="70" 
+				Width="180"
+				HorizontalAlignment="Right"
+				Click="selectButton_Click" />
+	</Grid>
+</UserControl>

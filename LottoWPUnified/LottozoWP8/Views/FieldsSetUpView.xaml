@@ -1,0 +1,112 @@
+﻿<phone:PhoneApplicationPage
+	x:Class="Lottozo.Views.FieldsSetUpView"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:uc="clr-namespace:Lottozo.Views.UserControls"
+	xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+	FontFamily="{StaticResource PhoneFontFamilyNormal}"
+	FontSize="{StaticResource PhoneFontSizeNormal}"
+	Foreground="{StaticResource PhoneForegroundBrush}"
+	SupportedOrientations="Portrait" Orientation="Portrait"
+	mc:Ignorable="d"
+	shell:SystemTray.IsVisible="True"
+	BackKeyPress="FieldsSetUpView_OnBackKeyPress"
+	Style="{StaticResource NavigationSlideLeftRightAnimation}"
+	toolkit:TiltEffect.IsTiltEnabled="True">
+
+	<!--LayoutRoot is the root grid where all page content is placed-->
+	<Grid x:Name="LayoutRoot" Background="Transparent">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<!--TitlePanel contains the name of the application and page title-->
+		<StackPanel Grid.Row="0" Margin="12,17,0,28">
+			<TextBlock x:Name="ApplicationTitle" Text="{Binding AppTitle}" Style="{StaticResource PhoneTextNormalStyle}"/>
+			<TextBlock x:Name="PageTitle" Text="{Binding ViewTitle}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="{StaticResource PhoneAccentBrush}"/>
+		</StackPanel>
+
+		<!--ContentPanel - place additional content here-->
+		<ScrollViewer Grid.Row="1">
+			<Grid x:Name="ContentPanel" Margin="12,0,12,0">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"></RowDefinition>
+					<RowDefinition Height="Auto"></RowDefinition>
+					<RowDefinition Height="Auto"></RowDefinition>
+					<RowDefinition Height="Auto"></RowDefinition>
+					<RowDefinition Height="Auto"></RowDefinition>
+					<RowDefinition Height="Auto"></RowDefinition>
+					<RowDefinition Height="Auto"></RowDefinition>
+				</Grid.RowDefinitions>
+				<uc:FieldEditor x:Name="FieldOne" 
+								Grid.Row="0" 
+								FieldNo="1" 
+								Visibility="Collapsed" 
+								NumbersChanged="{Binding NumbersChanged, Mode=TwoWay}"
+								IsDeletable="{Binding IsDeletable, Mode=TwoWay}"
+								IsAddable="{Binding IsAddable, Mode=TwoWay}"
+								FieldDeleted="{Binding FieldDeleted, Mode=TwoWay}"/>
+				<uc:FieldEditor x:Name="FieldTwo" 
+								Grid.Row="1" 
+								FieldNo="2" 
+								Visibility="Collapsed" 
+								NumbersChanged="{Binding NumbersChanged, Mode=TwoWay}"
+								IsDeletable="{Binding IsDeletable, Mode=TwoWay}"
+								IsAddable="{Binding IsAddable, Mode=TwoWay}"
+								FieldDeleted="{Binding FieldDeleted, Mode=TwoWay}"/>
+				<uc:FieldEditor x:Name="FieldThree" 
+								Grid.Row="2" 
+								FieldNo="3" 
+								Visibility="Collapsed" 
+								NumbersChanged="{Binding NumbersChanged, Mode=TwoWay}"
+								IsDeletable="{Binding IsDeletable, Mode=TwoWay}"
+								IsAddable="{Binding IsAddable, Mode=TwoWay}"
+								FieldDeleted="{Binding FieldDeleted, Mode=TwoWay}"/>
+				<uc:FieldEditor x:Name="FieldFour" 
+								Grid.Row="3" 
+								FieldNo="4" 
+								Visibility="Collapsed" 
+								NumbersChanged="{Binding NumbersChanged, Mode=TwoWay}"
+								IsDeletable="{Binding IsDeletable, Mode=TwoWay}"
+								IsAddable="{Binding IsAddable, Mode=TwoWay}"
+								FieldDeleted="{Binding FieldDeleted, Mode=TwoWay}"/>
+				<uc:FieldEditor x:Name="FieldFive" 
+								Grid.Row="4" 
+								FieldNo="5" 
+								Visibility="Collapsed"
+								NumbersChanged="{Binding NumbersChanged, Mode=TwoWay}"
+								IsDeletable="{Binding IsDeletable, Mode=TwoWay}"
+								IsAddable="{Binding IsAddable, Mode=TwoWay}"
+								FieldDeleted="{Binding FieldDeleted, Mode=TwoWay}"/>
+				<uc:FieldEditor x:Name="FieldSix" 
+								Grid.Row="5" 
+								FieldNo="6" 
+								Visibility="Collapsed" 
+								NumbersChanged="{Binding NumbersChanged, Mode=TwoWay}"
+								IsDeletable="{Binding IsDeletable, Mode=TwoWay}"
+								IsAddable="{Binding IsAddable, Mode=TwoWay}"
+								FieldDeleted="{Binding FieldDeleted, Mode=TwoWay}"/>
+				<Button x:Name="AddNewField" 
+						Grid.Row="6" 
+						Content="Új mező hozzáadása"
+						Width="300"
+						Height="80"
+						Visibility="{Binding IsAddable, Mode=OneWay, Converter={StaticResource BoolToVisibilityConverter}}"/>
+			</Grid>
+		</ScrollViewer>
+	</Grid>
+
+	<!--Sample code showing usage of ApplicationBar-->
+	<phone:PhoneApplicationPage.ApplicationBar>
+		<shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+			<shell:ApplicationBarIconButton IconUri="/Icons/appbar.cancel.rest.png" Text="mégse" Click="ApplicationBarCancelIconButton_Click"/>
+			<shell:ApplicationBarIconButton IconUri="/Icons/appbar.check.rest.png" Text="Küldés" Click="ApplicationBarIconButton_OnClick"/>
+		</shell:ApplicationBar>
+	</phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>
