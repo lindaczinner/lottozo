@@ -23,3 +23,15 @@ D:\work\Lottozo\LottoWPUnified\LottozoCore\Bin\Debug\System.Windows.Interactivit
 D:\work\Lottozo\LottoWPUnified\LottozoCore\obj\Debug\LottozoCore.csprojResolveAssemblyReference.cache
 D:\work\Lottozo\LottoWPUnified\LottozoCore\obj\Debug\LottozoCore.dll
 D:\work\Lottozo\LottoWPUnified\LottozoCore\obj\Debug\LottozoCore.pdb
+d:\work\repo\Lottozo\LottoWPUnified\LottozoCore\Bin\Debug\LottozoCore.dll
+d:\work\repo\Lottozo\LottoWPUnified\LottozoCore\Bin\Debug\LottozoCore.pdb
+d:\work\repo\Lottozo\LottoWPUnified\LottozoCore\Bin\Debug\Caliburn.Micro.dll
+d:\work\repo\Lottozo\LottoWPUnified\LottozoCore\Bin\Debug\Caliburn.Micro.Extensions.dll
+d:\work\repo\Lottozo\LottoWPUnified\LottozoCore\Bin\Debug\System.Windows.Interactivity.dll
+d:\work\repo\Lottozo\LottoWPUnified\LottozoCore\Bin\Debug\Caliburn.Micro.pdb
+d:\work\repo\Lottozo\LottoWPUnified\LottozoCore\Bin\Debug\Caliburn.Micro.xml
+d:\work\repo\Lottozo\LottoWPUnified\LottozoCore\Bin\Debug\Caliburn.Micro.Extensions.pdb
+d:\work\repo\Lottozo\LottoWPUnified\LottozoCore\Bin\Debug\Caliburn.Micro.Extensions.xml
+d:\work\repo\Lottozo\LottoWPUnified\LottozoCore\Bin\Debug\System.Windows.Interactivity.xml
+d:\work\repo\Lottozo\LottoWPUnified\LottozoCore\obj\Debug\LottozoCore.dll
+d:\work\repo\Lottozo\LottoWPUnified\LottozoCore\obj\Debug\LottozoCore.pdb
