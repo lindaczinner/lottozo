@@ -2,13 +2,14 @@
 			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 			 xmlns:local="clr-namespace:Lottozo"  
 			 xmlns:cal="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro"
+             xmlns:calplat="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro.Platform"
 			 xmlns:converters="clr-namespace:LottozoCore.Converters;assembly=LottozoCore"
 			 x:Class="Lottozo.App">
 
 	<Application.Resources>
 		<ResourceDictionary>
 
-			<cal:BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+            <calplat:BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter" />
 			<converters:BoolToVisibilityNegateConverter x:Key="BoolToVisibilityNegateConverter" />
 			<converters:ToggleSwitchStateBoolConverter x:Key="ToggleSwitchStateBoolConverter" />
 

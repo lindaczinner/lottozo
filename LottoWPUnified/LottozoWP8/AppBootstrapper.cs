@@ -15,11 +15,16 @@ using Microsoft.Phone.Shell;
 
 namespace Lottozo
 {
-	public class AppBootstrapper : PhoneBootstrapper
+	public class AppBootstrapper : PhoneBootstrapperBase
 	{
 		PhoneContainer container;
 
 		public LocalyticsSession appSession;
+
+        public AppBootstrapper()
+        {
+            Initialize();
+        }
 
 		protected override void Configure()
 		{
@@ -176,7 +181,7 @@ namespace Lottozo
 
 		protected override void OnStartup(object sender, StartupEventArgs e)
 		{
-			BugSenseHandler.Instance.InitAndStartSession(new ExceptionManager(Application), "7acc2269");
+			BugSenseHandler.Instance.InitAndStartSession(new ExceptionManager(Application), RootFrame,"7acc2269");
 			BugSenseHandler.Instance.LastActionBeforeTerminate(BeforeAppCrash);
 
 			var config = new TypeMappingConfiguration
@@ -202,7 +207,6 @@ namespace Lottozo
 			var refAssemblies = AppDomain.CurrentDomain.GetAssemblies();
 
 			assemblies.AddRange(refAssemblies);
-			assemblies.Add(Assembly.Load("LottozoCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"));
 
 			return assemblies;
 		}

@@ -9,13 +9,14 @@
 	xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
 	xmlns:uc="clr-namespace:Lottozo.Views.UserControls" 
 	xmlns:cal="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro"
+    xmlns:calplat="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro.Platform"
 	FontFamily="{StaticResource PhoneFontFamilyNormal}"
 	FontSize="{StaticResource PhoneFontSizeNormal}"
 	Foreground="{StaticResource PhoneForegroundBrush}"
 	SupportedOrientations="Portrait" Orientation="Portrait"
 	shell:SystemTray.IsVisible="True"
 	mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
-	cal:Message.Attach="[Event Loaded] = [Action ValidateView()]"
+    calplat:Message.Attach="[Event Loaded] = [Action ValidateView()]"
 	Style="{StaticResource NavigationSlideMixAnimation}"
 	toolkit:TiltEffect.IsTiltEnabled="True">
 
@@ -49,7 +50,7 @@
 		<ScrollViewer x:Name="scroll" Grid.Row="1">
 			<Grid x:Name="ContentPanel" Margin="12,0,12,0">
 				<Grid.Resources>
-					<cal:BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+					<calplat:BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter" />
 				</Grid.Resources>
 				<Grid.RowDefinitions>
 					<RowDefinition Height="Auto" />
@@ -85,7 +86,7 @@
 						Grid.Row="3" 
 						Content="Mezők módosítása"
 						Width="325"
-						cal:Message.Attach="[Event Click] = [Action ModifyFields()]" />
+						calplat:Message.Attach="[Event Click] = [Action ModifyFields()]" />
 				<toolkit:ToggleSwitch x:Name="JokerToggle"
 								Grid.Row="4" 
 								Margin="12"

@@ -2,8 +2,9 @@
 using System.Linq;
 using LottozoCore.Interfaces;
 using LottozoCore.Model;
-using Caliburn.Micro;
 using Microsoft.Phone.Shell;
+using Caliburn.Micro;
+
 
 namespace LottozoCore.ViewModels
 {

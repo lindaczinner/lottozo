@@ -19,7 +19,5 @@
 		public const string SavedDataFileName = "SavedData.txt";
 
 		public const string TextNumber = "1756";
-
-		public const int MaxFieldNo = 6;
 	}
 }

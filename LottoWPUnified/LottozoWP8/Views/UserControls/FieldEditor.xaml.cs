@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using Caliburn.Micro;
 using LottozoCore.Interfaces;
 using LottozoCore.ViewModels;
+using Caliburn.Micro;
 
 namespace Lottozo.Views.UserControls
 {
@@ -105,7 +105,7 @@ namespace Lottozo.Views.UserControls
 			IoC.Get<LottoTicketViewModel>().FieldNo = FieldNo;
 			IoC.Get<LottoTicketViewModel>().NumberNo = Numbers.Count;
 			IoC.Get<LottoTicketViewModel>().MaxValue = MaxValue;
-			IoC.Get<LottoTicketViewModel>().LottoNumbers = new BindableCollection<int?>();
+            IoC.Get<LottoTicketViewModel>().LottoNumbers = new BindableCollection<int?>();
 			foreach (var lottoNumber in Numbers)
 			{
 				IoC.Get<LottoTicketViewModel>().LottoNumbers.Add(lottoNumber);

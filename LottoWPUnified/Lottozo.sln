@@ -1,18 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottozoCore", "LottozoCore\LottozoCore.csproj", "{E3C1FE5C-780F-48D0-8B61-0DE8139A91FD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottozoWP8", "LottozoWP8\LottozoWP8.csproj", "{DB5168E0-B6C3-4D0A-911F-3D5A22B0ED30}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottozoWP7", "LottozoWP7\LottozoWP7.csproj", "{0E7009E8-E16B-4EC1-B808-2889D5AC985C}"
-EndProject
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1147688E-2556-4892-9DB8-EBE64AF1177F}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottozoCore", "LottozoCore\LottozoCore.csproj", "{E3C1FE5C-780F-48D0-8B61-0DE8139A91FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottozoWP8", "LottozoWP8\LottozoWP8.csproj", "{DB5168E0-B6C3-4D0A-911F-3D5A22B0ED30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottozoWP7", "LottozoWP7\LottozoWP7.csproj", "{0E7009E8-E16B-4EC1-B808-2889D5AC985C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottozoWP81", "LottozoWP81\LottozoWP81.csproj", "{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,6 +64,24 @@ Global
 		{0E7009E8-E16B-4EC1-B808-2889D5AC985C}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{0E7009E8-E16B-4EC1-B808-2889D5AC985C}.Release|ARM.ActiveCfg = Release|Any CPU
 		{0E7009E8-E16B-4EC1-B808-2889D5AC985C}.Release|x86.ActiveCfg = Release|Any CPU
+		{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}.Debug|ARM.ActiveCfg = Debug|ARM
+		{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}.Debug|ARM.Build.0 = Debug|ARM
+		{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}.Debug|ARM.Deploy.0 = Debug|ARM
+		{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}.Debug|x86.ActiveCfg = Debug|x86
+		{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}.Debug|x86.Build.0 = Debug|x86
+		{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}.Debug|x86.Deploy.0 = Debug|x86
+		{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}.Release|ARM.ActiveCfg = Release|ARM
+		{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}.Release|ARM.Build.0 = Release|ARM
+		{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}.Release|ARM.Deploy.0 = Release|ARM
+		{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}.Release|x86.ActiveCfg = Release|x86
+		{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}.Release|x86.Build.0 = Release|x86
+		{B38648BA-67FB-4E60-B5A1-03A6AC054CCA}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

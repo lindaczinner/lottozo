@@ -1,0 +1,117 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+					xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+					xmlns:controlsList="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+					xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+					xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+					mc:Ignorable="d">
+	
+	<Style x:Key="NavigationTurnstyleAnimation" TargetType="controlsList:PhoneApplicationPage">
+		<Setter Property="toolkit:TransitionService.NavigationInTransition">
+			<Setter.Value>
+				<toolkit:NavigationInTransition>
+					<toolkit:NavigationInTransition.Backward>
+						<toolkit:TurnstileTransition Mode="BackwardIn"/>
+					</toolkit:NavigationInTransition.Backward>
+					<toolkit:NavigationInTransition.Forward>
+						<toolkit:TurnstileTransition Mode="ForwardIn" />
+					</toolkit:NavigationInTransition.Forward>
+				</toolkit:NavigationInTransition>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="toolkit:TransitionService.NavigationOutTransition">
+			<Setter.Value>
+				<toolkit:NavigationOutTransition>
+					<toolkit:NavigationOutTransition.Backward>
+						<toolkit:TurnstileTransition Mode="BackwardOut"/>
+					</toolkit:NavigationOutTransition.Backward>
+					<toolkit:NavigationOutTransition.Forward>
+						<toolkit:TurnstileTransition Mode="ForwardOut"/>
+					</toolkit:NavigationOutTransition.Forward>
+				</toolkit:NavigationOutTransition>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style x:Key="NavigationSlideUpDownAnimation" TargetType="controlsList:PhoneApplicationPage">
+		<Setter Property="toolkit:TransitionService.NavigationInTransition">
+			<Setter.Value>
+				<toolkit:NavigationInTransition>
+					<toolkit:NavigationInTransition.Backward>
+						<toolkit:SlideTransition Mode="SlideDownFadeIn"/>
+					</toolkit:NavigationInTransition.Backward>
+					<toolkit:NavigationInTransition.Forward>
+						<toolkit:SlideTransition Mode="SlideUpFadeIn" />
+					</toolkit:NavigationInTransition.Forward>
+				</toolkit:NavigationInTransition>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="toolkit:TransitionService.NavigationOutTransition">
+			<Setter.Value>
+				<toolkit:NavigationOutTransition>
+					<toolkit:NavigationOutTransition.Backward>
+						<toolkit:SlideTransition Mode="SlideDownFadeOut"/>
+					</toolkit:NavigationOutTransition.Backward>
+					<toolkit:NavigationOutTransition.Forward>
+						<toolkit:SlideTransition Mode="SlideUpFadeOut"/>
+					</toolkit:NavigationOutTransition.Forward>
+				</toolkit:NavigationOutTransition>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style x:Key="NavigationSlideLeftRightAnimation" TargetType="controlsList:PhoneApplicationPage">
+		<Setter Property="toolkit:TransitionService.NavigationInTransition">
+			<Setter.Value>
+				<toolkit:NavigationInTransition>
+					<toolkit:NavigationInTransition.Backward>
+						<toolkit:SlideTransition Mode="SlideRightFadeIn"/>
+					</toolkit:NavigationInTransition.Backward>
+					<toolkit:NavigationInTransition.Forward>
+						<toolkit:SlideTransition Mode="SlideLeftFadeIn" />
+					</toolkit:NavigationInTransition.Forward>
+				</toolkit:NavigationInTransition>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="toolkit:TransitionService.NavigationOutTransition">
+			<Setter.Value>
+				<toolkit:NavigationOutTransition>
+					<toolkit:NavigationOutTransition.Backward>
+						<toolkit:SlideTransition Mode="SlideRightFadeOut"/>
+					</toolkit:NavigationOutTransition.Backward>
+					<toolkit:NavigationOutTransition.Forward>
+						<toolkit:SlideTransition Mode="SlideLeftFadeOut"/>
+					</toolkit:NavigationOutTransition.Forward>
+				</toolkit:NavigationOutTransition>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style x:Key="NavigationSlideMixAnimation" TargetType="controlsList:PhoneApplicationPage">
+		<Setter Property="toolkit:TransitionService.NavigationInTransition">
+			<Setter.Value>
+				<toolkit:NavigationInTransition>
+					<toolkit:NavigationInTransition.Backward>
+						<toolkit:SlideTransition Mode="SlideRightFadeIn"/>
+					</toolkit:NavigationInTransition.Backward>
+					<toolkit:NavigationInTransition.Forward>
+						<toolkit:SlideTransition Mode="SlideUpFadeIn" />
+					</toolkit:NavigationInTransition.Forward>
+				</toolkit:NavigationInTransition>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="toolkit:TransitionService.NavigationOutTransition">
+			<Setter.Value>
+				<toolkit:NavigationOutTransition>
+					<toolkit:NavigationOutTransition.Backward>
+						<toolkit:SlideTransition Mode="SlideDownFadeOut"/>
+					</toolkit:NavigationOutTransition.Backward>
+					<toolkit:NavigationOutTransition.Forward>
+						<toolkit:SlideTransition Mode="SlideLeftFadeOut"/>
+					</toolkit:NavigationOutTransition.Forward>
+				</toolkit:NavigationOutTransition>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+</ResourceDictionary>

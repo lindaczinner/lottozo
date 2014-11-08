@@ -9,6 +9,8 @@ namespace LottozoCore.Model
 
 		public const int NumberNo = 5;
 
+        public const int MaxFieldValue = 6;
+
 		public string Year { get; set; }
 
 		public string Week { get; set; }

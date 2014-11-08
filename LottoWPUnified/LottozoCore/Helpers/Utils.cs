@@ -127,6 +127,21 @@ namespace LottozoCore.Helpers
 			return 0;
 		}
 
+        public static int GetGameMaxFieldNumber(LotteryTypes lotteryType)
+        {
+            switch (lotteryType)
+            {
+                case LotteryTypes.Lotto:
+                    return LottoData.MaxFieldValue;
+                case LotteryTypes.LottoSix:
+                    return LottoSixData.MaxFieldValue;
+                case LotteryTypes.Skandinavian:
+                    return SkandinavianLottoData.MaxFieldValue;
+            }
+
+            return 0;
+        }
+
 		public static int GetGameNumberNo(LotteryTypes lotteryType)
 		{
 			switch (lotteryType)

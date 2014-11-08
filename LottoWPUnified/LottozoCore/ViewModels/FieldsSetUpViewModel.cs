@@ -4,6 +4,7 @@ using Caliburn.Micro;
 using LottozoCore.Interfaces;
 using LottozoCore.Model;
 using Microsoft.Phone.Shell;
+using LottozoCore.Helpers;
 
 namespace LottozoCore.ViewModels
 {
@@ -79,17 +80,17 @@ namespace LottozoCore.ViewModels
 			maxNo = Helpers.Utils.GetGameMaxNumber(ticketDetails.LotteryTypes);
 			numberNo = Helpers.Utils.GetGameNumberNo(ticketDetails.LotteryTypes);
 			IsDeletable = ticketDetails.Fields.Count != 1;
-			IsAddable = ticketDetails.Fields.Count != Constants.MaxFieldNo;
+            IsAddable = ticketDetails.Fields.Count != Utils.GetGameMaxFieldNumber(ticketDetails.LotteryTypes);
 		}
 
 		public void AddNewField()
 		{
 			var ticketDetails = IoC.Get<IStateMachine>().TicketDetails;
 
-			if (ticketDetails.Fields.Count == Constants.MaxFieldNo)
+            if (ticketDetails.Fields.Count == Utils.GetGameMaxFieldNumber(ticketDetails.LotteryTypes))
 				return;
 
-			if (ticketDetails.Fields.Count == Constants.MaxFieldNo - 1)
+            if (ticketDetails.Fields.Count == Utils.GetGameMaxFieldNumber(ticketDetails.LotteryTypes) - 1)
 				IsAddable = false;
 
 			IsDeletable = true;

@@ -9,7 +9,8 @@
 	xmlns:uc="clr-namespace:Lottozo.Views.UserControls"
 	xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
 	xmlns:cal="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro"
-	FontFamily="{StaticResource PhoneFontFamilyNormal}"
+	 xmlns:calplat="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro.Platform"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
 	FontSize="{StaticResource PhoneFontSizeNormal}"
 	Foreground="{StaticResource PhoneForegroundBrush}"
 	SupportedOrientations="Portrait" Orientation="Portrait"
@@ -17,7 +18,7 @@
 	shell:SystemTray.IsVisible="True"
 	Style="{StaticResource NavigationSlideUpDownAnimation}"
 	toolkit:TiltEffect.IsTiltEnabled="True"
-	cal:Message.Attach="[Event Loaded] = [Action Loaded()]">
+	calplat:Message.Attach="[Event Loaded] = [Action Loaded()]">
 
 	<!--LayoutRoot is the root grid where all page content is placed-->
 	<Grid x:Name="LayoutRoot" Background="Transparent">
